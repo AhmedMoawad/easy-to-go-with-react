@@ -6,6 +6,7 @@ This is a Simple React Tutorial for all who to build web apps using React
 
   - [Prerequisites](#prerequisites)
   - [Setup](#setup)
+  - [Tutorial Map](#tutorial-map)
   
   
 ## Prerequisites
@@ -37,3 +38,6 @@ We will use in this tutorial the simple and easy method to create react app call
 ```
 
 You can visit [Create React App](https://github.com/facebookincubator/create-react-app) for more info.
+
+## Tutorial Map
+![Tutorial Map](https://user-images.githubusercontent.com/11356226/33302591-e89a294a-d405-11e7-9485-cbffc33b79a5.png)

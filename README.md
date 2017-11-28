@@ -105,7 +105,28 @@ const statementFn = (x, y) => {
 ```
 
 ### Default Parameters
+EcmaScript6 added the ability to add default values to the given parameters if it's not be provided to the function. And that's for sure make the code more readable and organizable.
+
+Here is an example 
+```javascript 
+function doSum (x, y = 7, z = 12) {
+ return x + y + z;
+}
+
+doSum(2)         // output: 21
+doSum(2,4)       // output: 18
+doSum(2,4,10)    // output: 16
+```
+> Note: You must make function default parameters the last parameters of it in arrangement or assign its value to `undefined` when calling the function but that will be little confusing
+```javascript
+function doSum (x, y = 7, z) {
+ return x + y + z;
+}
+
+doSum(2,undefined,6)       // output will be 2 + 7 + 6 = 15 
+```
 ### Rest Parameter
+
 ### Spread Operator
 ### String Interpolation
 ### Modules

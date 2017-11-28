@@ -68,12 +68,14 @@ it will result: ` using var: 5 `
 
 > Example using `let`:
 ```javascript
-if(True){
+if (true) {
    let x = 5
 }
 console.log("using let: ", x)
 ```
 it will result:  `ReferenceError: x is not defined`
+
+So `let` make a scope within `if` statement curly braces and `var` don't.
 
 ### const
 ### Arrow Functions

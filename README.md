@@ -78,6 +78,15 @@ it will result:  `ReferenceError: x is not defined`
 So `let` make a scope within `if` statement curly braces and `var` don't.
 
 ### const
+`const` almost used to daclare any variables that will not changed or in accurate say you will not assign it a new value using `=` because when you declare a composite typed variable like objects or arrays you can add or remove elements to or from it normally but you can't asign to the variable another value.
+
+```javascript
+const x = [1, 2, 3]
+x.push(4)       // x will now be [1, 2, 3, 4]
+                // but
+x = [1, 4, 6]   // It will raise TypeError: Assignment to constant variable
+```
+
 ### Arrow Functions
 ### Default Parameters
 ### Rest Parameter

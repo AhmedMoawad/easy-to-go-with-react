@@ -140,4 +140,79 @@ fullName = `Full Name is ${firstName} ${lastName}`                 // New String
 
 // Result for both: Full Name is Ahmed Moawad
 ```
+
 ### Modules
+This is a big new feature and all JavaScript was waiting for releasing it to make your code more modular and organized. There is three points that we will talk about for this feature:
+
+#### 1. Exporting
+> In order to make class, function or any variable inside a file (module) available in other files (modules) we use module exporting, and here are some examples for how to do that:
+
+```javascript
+/**
+* @file index.js 
+*/
+
+// Exporting Function
+export function getFullName(firstName, lastName) { 
+   return `${firstName} ${lastName}` 
+}
+
+// Exporting variable
+export const title = "Frontend Engineer"
+
+```
+
+#### 2. Importing
+> In order to import class, function or any type of variable inside a file (module) to be able to use it in this file we use module importing, and here are some examples for how to do that:
+
+```javascript
+/**
+* @file about.js 
+*/
+
+// Import getFullName function and title variable from index module
+import { getFullName, title } from 'index'
+
+// Use them
+const fullName = getFullName('Ahmed', 'Moawad')
+
+console.log(`My Name is ${fullName} and I'm ${title}`)
+
+// Result: My Name is Ahmed Moawad and I'm Frontend Engineer
+
+```
+
+#### 3. Default Exporting
+> This is an awesome feature in order to make any kind of variables the default one when exporting to other modules. Here is an example that will explain it's functionality in more details:
+
+```javascript
+/**
+* @file index.js 
+*/
+
+/*
+* .... brevious code
+*/
+
+// Export the following Object as the default export for index module
+export default {
+ firstName: 'Ahmed',
+ lastName: 'Moawad',
+ title: 'Frontend Engineer'
+}
+
+
+/**
+* @file about.js 
+*/
+
+// Import Default without the curly braces and with any name you choose for it
+import myData, { getFullName } from index
+
+const fullName = getFullName(myData.firstName, myData.lastName)
+
+console.log(`My Name is ${fullName} and I'm ${myData.title}`)
+
+// Result: My Name is Ahmed Moawad and I'm Frontend Engineer
+
+```

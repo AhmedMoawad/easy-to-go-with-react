@@ -88,7 +88,7 @@ x = [1, 4, 6]   // It will raise TypeError: Assignment to constant variable
 ```
 
 ### Arrow Functions
-Arrow Functions is a special type of functions that solve the problem of `this` keyword strange behavior when calling function from a context other than its own one ( it's not strange if you know how it works :) ) and convert it to Lexical `this` so that it maintains that the context that call it will be the reference `this`.
+Arrow Functions is a special type of functions that solve the problem of `this` keyword strange behavior when calling function from a context other than its own one ( it's not strange if you know how it works :smile: ) and convert it to Lexical `this` so that it maintains that the context that call it will be the reference `this`.
 
 Examples on How to write it:
 ```javascript 

@@ -12,8 +12,6 @@ This is a Simple React Tutorial for all who to build web apps using React
     - [const](#const)
     - [Arrow Functions](#arrow-functions)
     - [Default Parameters](#default-parameters)
-    - [Rest Parameter](#rest-parameter)
-    - [Spread Operator](#spread-operator)
     - [String Interpolation](#string-interpolation)
     - [Modules](#modules)
   
@@ -125,8 +123,21 @@ function doSum (x, y = 7, z) {
 
 doSum(2,undefined,6)       // output will be 2 + 7 + 6 = 15 
 ```
-### Rest Parameter
 
-### Spread Operator
 ### String Interpolation
+String Interpolation give the ability to write more readable and organized strings without need to use `+` operator to concatenate the string typed variables with each other.
+
+Here is an example for that
+
+```javascript
+const firstName = 'Ahmed'
+
+const lastName = 'Moawad'
+
+let fullName = 'Full Name is ' + firstName + ' ' + lastName        // The old way
+
+fullName = `Full Name is ${firstName} ${lastName}`                 // New String Interpolation
+
+// Result for both: Full Name is Ahmed Moawad
+```
 ### Modules

@@ -226,6 +226,22 @@ console.log(`My Name is ${fullName} and I'm ${myData.title}`)
 
 <p align="center">
   <img src ="https://user-images.githubusercontent.com/11356226/33383928-52be15a2-d52d-11e7-9dd9-05c81dcc592b.gif" />
+  <p align="center">
+    -- Illustrative Example explains React Components in a simple way --
+  </p>
 </p>
+<br/>
+<br/>
+
+React is component based library so <strong>Component</strong> is considered the core unit of React. 
+
+As we have seen in the illustrative example, The component is consists of some <strong> props </strong> that will be provided to it at its construction and have a <strong> state </strong> that is represents the behaviour of the component and will be initialized during component construction.
+
+After Construction Your component Layout (HTML Template) will be rendered based on the provided props and the initialized State.
+
+And If the component be provided by different <strong>props</strong> or the <strong>pstate</strong> of it changes, The component will be rendered another time with the new effect.
+
+The component have a life cycle we will talk about it later in details to show how to use it the best way.
+
 
 ## Virtual DOM

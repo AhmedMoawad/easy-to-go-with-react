@@ -224,4 +224,8 @@ console.log(`My Name is ${fullName} and I'm ${myData.title}`)
 
 ## Big Picture
 
+<p align="center">
+  <img src ="https://user-images.githubusercontent.com/11356226/33383928-52be15a2-d52d-11e7-9dd9-05c81dcc592b.gif" />
+</p>
+
 ## Virtual DOM

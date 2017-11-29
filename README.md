@@ -239,7 +239,7 @@ As we have seen in the illustrative example, The component is consists of some <
 
 After Construction Your component Layout (HTML Template) will be rendered based on the provided props and the initialized State.
 
-And If the component be provided by different <strong>props</strong> or the <strong>pstate</strong> of it changes, The component will be rendered another time with the new effect.
+And If the component be provided by different <strong>props</strong> or the <strong>state</strong> of it changes, The component will be rendered another time with the new effect.
 
 The component have a life cycle we will talk about it later in details to show how to use it the best way.
 

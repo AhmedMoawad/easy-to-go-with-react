@@ -14,6 +14,9 @@ This is a Simple React Tutorial for all who to build web apps using React
     - [Default Parameters](#default-parameters)
     - [String Interpolation](#string-interpolation)
     - [Modules](#modules)
+  - [Why React](#why-react)
+  - [Big Picture](#big-picture)
+  - [Virtual DOM](#virtual-dom)
   
   
 ## Prerequisites
@@ -216,3 +219,9 @@ console.log(`My Name is ${fullName} and I'm ${myData.title}`)
 // Result: My Name is Ahmed Moawad and I'm Frontend Engineer
 
 ```
+
+### Why React
+
+### Big Picture
+
+### Virtual DOM

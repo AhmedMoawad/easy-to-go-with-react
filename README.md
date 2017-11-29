@@ -1,5 +1,5 @@
 # React - The Lego Game
-In this tutorial we will talk about how to go through <strong> React </strong> and prepare you to be able to build web apps using the amazing <strong> React </strong> like lego bricks shapes.
+In this tutorial we will talk about how to go through <strong> React </strong> and prepare you to be able to build web apps using the amazing <strong> React </strong> like you play with <em> lego bricks </em> :smile:.
 
 
 ## Table of Contents

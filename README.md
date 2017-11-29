@@ -53,7 +53,7 @@ You can visit [Create React App](https://github.com/facebookincubator/create-rea
 ![Tutorial Map](https://user-images.githubusercontent.com/11356226/33302591-e89a294a-d405-11e7-9485-cbffc33b79a5.png)
 
 ## Quick Look at ES6
-We will take here a quick on the new features on EchmaScript 6.
+> We will take here a quick tour on the new features on EchmaScript 6.
 
 ### let
 We all know that declaring variable with `var` makes theis variable available only on the function scope that it has been declared in. But with `let` every `{ }` consider a scope so any variable that declared with `let` will available only on this curly braces scope.

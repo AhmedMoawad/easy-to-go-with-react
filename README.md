@@ -1,5 +1,5 @@
-# React Tutorial
-This is a Simple React Tutorial for all who to build web apps using React
+# Easy To Go with React
+This is the first Tutorial in <strong> Easy to Go </strong> tutorial series. In this tutorial we will talk about how to go through <strong> React </strong> and prepare you to be able to build web apps using the amazing <strong> React </strong>
 
 
 ## Table of Contents

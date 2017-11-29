@@ -56,7 +56,7 @@ You can visit [Create React App](https://github.com/facebookincubator/create-rea
 > We will take here a quick tour on the new features on EchmaScript 6.
 
 ### let
-We all know that declaring variable with `var` makes theis variable available only on the function scope that it has been declared in. But with `let` every `{ }` consider a scope so any variable that declared with `let` will available only on this curly braces scope.
+We all know that declaring variable with `var` makes this variable available only on the function scope that it has been declared in. But with `let` every `{ }` consider a scope so any variable that declared with `let` will available only on this curly braces scope.
 
 > Example using `var`:
 ```javascript

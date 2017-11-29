@@ -220,8 +220,8 @@ console.log(`My Name is ${fullName} and I'm ${myData.title}`)
 
 ```
 
-### Why React
+## Why React
 
-### Big Picture
+## Big Picture
 
-### Virtual DOM
+## Virtual DOM

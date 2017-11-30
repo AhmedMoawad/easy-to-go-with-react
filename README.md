@@ -409,6 +409,27 @@ let select= (<select onChange = {function(e){v = e.target.value}}>
 As we have seen in [Big Picture](#big-picture) section that the component is the main component and here we will create it and then rendered it.
 
 ### Create it
+Here is an example of how to create new Component
+```jsx
+/**
+* @file Hello.jsx
+*/
 
+// import React 
+import React from 'react';
+
+// Create Hello Component
+class Hello extends React.Component {
+  /**
+  * Render Function is responsible for render this component
+  */
+  render() {
+    return <h1>Hello, {this.props.name}</h1>;
+  }
+}
+```
+<p align='center'>
+    <img width='250px' src='https://user-images.githubusercontent.com/11356226/33449976-08e7925a-d613-11e7-882b-a203f22f6799.png'/>
+<p>
 
 ### Render it

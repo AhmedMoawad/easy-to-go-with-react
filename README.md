@@ -497,7 +497,7 @@ Later when we will be familiar with React, will discuss the component [Life Cycl
 
 Component haven't any responsiblity on creating or updating the `props` it uses it only to generate it's `state` and it's HTML Template UI. 
 
-You can think of `props` like weather temperature (Something you have any hands on changing it), If the temperature goes down, We put on more clothes and vice versa.
+You can think of `props` like weather temperature (Something you have no hand on changing it), If the temperature goes down, We put on more clothes and vice versa.
 
 > Note: All React components must act like pure functions with respect to their props.
  
@@ -519,6 +519,9 @@ class Hello extends React.Component {
   }
 }
 
+```
+
+```jsx
 /**
 * @file index.js
 */
@@ -528,6 +531,7 @@ ReactDOM.render(
   <Hello name = 'Ahmed' nationality = 'egypt' />,
   document.getElementById('root')
 );
+
 ```
 And the result will be something like that
 

@@ -291,15 +291,15 @@ const element = <h1>Hello, React lovers!</h1>;
 
 The following code is JSX:
 ```jsx
-const element = <h1 className = ‘greet’>Hello, React Lovers!</h1>;
+const element = <h1 className = 'greet'>Hello, React Lovers!</h1>;
 ```
 will be compiled using [Babel](https://babeljs.io/) to the following Code:
 
 ```javascript
 // Create a React Element
 const element = React.createElement(
-	‘h1’ ,                                  // The Tag Name of the element
-	{className: ‘greet’} ,                  // The properties of this element
+	'h1' ,                                  // The Tag Name of the element
+	{className: 'greet'} ,                  // The properties of this element
 	‘Hello, React Lovers!’                  // HTML Content inside the Element
 )
 ```
@@ -314,7 +314,7 @@ Now, We will take a quick tour on How to write <strong>JSX</strong> in order to 
 Now we will introduce how treat with JavaScript Expressions and how to interpolate them in JSX templates in order to generate dynamic components.
 
 ```jsx
-var name = ‘Ahmed’
+var name = 'Ahmed'
 //Interpolation in JSX
 var element = <h1>Hello, { name }</h1>;
 
@@ -356,6 +356,13 @@ title type useMap value width wmode wrap
 ```
 
 You can notice that <strong>class</strong> HTML attribute has been renamed with `className` in order to doesn't make a conflict with `class` keyword in JavaScript. and Html label attribute <strong>for</strong> converted to `htmlFor` too.
+
+Here an Example:
+```jsx
+var class = 'greet'
+var element = <h1 className={class} id = '2'>Hello, { name }</h1>;
+
+```
 
 ### Styles
 

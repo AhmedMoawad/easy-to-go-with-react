@@ -488,6 +488,7 @@ What happens above is that we use <strong>ReactDOM</strong> method called `rende
 Now run this command: `yarn start`
 
 Congratulations :tada:! you just created your first React Component Keep the good spirit on :muscle:.
+
 <br />
 
 ## Overview on React Components
@@ -625,6 +626,7 @@ The result will be something like that
 	<img width='25px' src='https://user-images.githubusercontent.com/11356226/33455319-5962aff6-d624-11e7-9687-8f6ea797c9ad.gif'/>
 	Hello, I'm Ahmed
 </p>
+
 <br />
 
 ## Treating with Forms

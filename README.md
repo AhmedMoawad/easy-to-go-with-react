@@ -359,8 +359,8 @@ You can notice that <strong>class</strong> HTML attribute has been renamed with 
 
 Here an Example:
 ```jsx
-var class = 'greet'
-var element = <h1 className={class} id = '2'>Hello, { name }</h1>;
+var cls = 'greet';
+var element = <h1 className={cls} id = '2'>Hello, { name }</h1>;
 
 ```
 

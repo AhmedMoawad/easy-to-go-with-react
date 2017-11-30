@@ -23,7 +23,7 @@ In this tutorial we will talk about how to go through <strong> React </strong> a
     - [Expressions](#expressions)
     - [HTML Attributes](#html-attributes)
     - [Styles](#styles)
-    - [Handling Events](#handling-events)
+    - [Binding Events](#binding-events)
   
   
 ## Prerequisites

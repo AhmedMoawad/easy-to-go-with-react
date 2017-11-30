@@ -245,7 +245,7 @@ The component have a life cycle we will talk about it later in details to show h
 
 
 ## Virtual DOM
-> React use Virtual DOM in order to enhance the rich web application performance
+> React uses Virtual DOM in order to enhance the web application performance, So React is very fast.
 
 ### Problem to Be solved
 Manipulating with the <strong>DOM</strong> is slow because changing it directly change the web page. So If you changed it many times you will suffer from rendering performance issue and nowadays Most of Web Apps needs to change the DOM frequently. So <strong> Virtual DOM </strong> came to solve this problem.

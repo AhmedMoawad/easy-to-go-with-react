@@ -366,5 +366,18 @@ var element = <h1 className={cls} id = '2'>Hello, { name }</h1>;
 
 ### Styles
 
+You can add inline styles to your element using the follwing method
+
+```jsx
+// Construct a Style Object
+var styles = {
+  backgroundColor: ‘red’,		// the style properties follows JavaScript naming convention
+  color : ‘orange’
+}
+
+var element = <h1 style={ styles } >Hello There </h1>;
+
+```
+
 ### Handling Events
 

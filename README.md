@@ -29,7 +29,7 @@ In this tutorial we will talk about how to go through <strong> React </strong> a
     - [Render it](#render-it)
   - [Overview on React Components](#overview-on-react-components)
     - [Props](#props)
-    - [States](#states)
+    - [State](#state)
   
   
 ## Prerequisites
@@ -484,11 +484,59 @@ Now run this command: `yarn start`
 Congratulations :tada:! you just created your first React Component Keep the good spirit on :muscle:.
 
 ## Overview on React Components
+> I mean Lego bricks :confused:
+
+Components let you split the UI into independent, reusable pieces, and think about each piece in isolation.
+
+We will talk now in details about the [props](#props) (Inputs) and the [state](#state) of the component. 
+
+Later when we will be familiar with React, will discuss the component [Life Cycle](#life-cycle)
 
 ### Props
-#### Use it
+> Props regarding to the component are like Eye Color regarding to you, I hope you don’t put lenses
 
-### States
+Component haven't any responsiblity on creating or updating the `props` it uses it only to generate it's `state` and it's HTML Template UI. 
+
+You can think of `props` like weather temperature (Something you have any hands on changing it), If the temperature goes down, We put on more clothes and vice versa.
+
+> Note: All React components must act like pure functions with respect to their props.
+ 
+#### Use it
+Here is an example on How to use props on component
+
+```jsx
+/**
+* @file Hello.js
+*/
+
+/* ... */
+class Hello extends React.Component {
+  render() {
+    return <div> 
+             <img src={this.props.nationality + ‘.png’} />
+	     Hello, I'm {this.props.name} 
+           </div>;
+  }
+}
+
+/**
+* @file index.js
+*/
+
+/* ... */
+ReactDOM.render(
+  <Hello name = 'Ahmed' nationality = 'egypt' />,
+  document.getElementById('root')
+);
+```
+And the result will be something like that
+
+<p align='center'>
+	<img width='20px' src='https://upload.wikimedia.org/wikipedia/commons/a/a0/Flag_of_the_Arab_Republic_of_Egypt_1984.png'/>
+	Hello, I'm Ahmed
+</p>
+
+### State
 #### Initialize it
 #### Use it 
 #### Change it

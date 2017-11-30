@@ -541,6 +541,18 @@ And the result will be something like that
 </p>
 
 ### State
-#### Initialize it
+> State regarding to the component are like your mood regarding to you, I hope you’re happy
+
+React Component have the full control of it's state. It can initialize, update it.
+
+You can think of `state` like your mood based on the weather. Some of us feel happy when it's raining, but some others feel bored.
+
+So The weather temperature will be like a `prop` and your mood that depending on the weather will be like `state`.
+
+Let's know How to manage the component state.
+
+#### Initialize it 
+
 #### Use it 
+
 #### Change it

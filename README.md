@@ -408,11 +408,27 @@ let select= (<select onChange = {function(e){v = e.target.value}}>
 > I mean First React Component :wink:
 As we have seen in [Big Picture](#big-picture) section that the component is the main component and here we will create it and then rendered it.
 
+Let first setup our application using the instructions in [Setup](#setup) section. 
+
+Then Create a file called `Hello.js` in `src` directory. So the hierarchy will be something like that:
+```
+Your-App-Name
+  |
+  - public
+  |   |
+  |   - index.html 
+  |
+  - src
+  |  |
+  |  - index.js
+  |  - Hello.js
+```
+
 ### Create it
-Here is an example of how to create new Component
+Here is an example of how to create new Component in the created file `Hello.jsx`
 ```jsx
 /**
-* @file Hello.jsx
+* @file Hello.js
 */
 
 // import React 
@@ -433,3 +449,27 @@ class Hello extends React.Component {
 <p>
 
 ### Render it
+Now, Let's render it on our application. Open file called `index.js` and use your component inside it like the following
+
+```js
+/**
+* @file index.js
+*/
+
+// Import React DOM - It responsible for compiling React Component into HTML Element
+import ReactDOM from 'react-dom';
+
+// Import Your Component
+import Hello from 'Hello';
+
+// Run the Render Function to render your App
+ReactDOM.render(
+  <Hello name = ‘Ahmed’ />,			// Use your component and provide it with name prop
+  document.getElementById('root')		// Render your App into the element whose id named root
+);
+
+```
+
+What happens above is that we use <strong>ReactDOM</strong> method called `render` to render your application into the static html file called `index.html`.
+
+

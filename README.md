@@ -543,7 +543,7 @@ And the result will be something like that
 ### State
 > State regarding to the component are like your mood regarding to you, I hope you’re happy
 
-React Component have the full control of it's state. It can initialize, update it.
+React Component have the full control of it's state. It can initialize, use and update it.
 
 You can think of `state` like your mood based on the weather. Some of us feel happy when it's raining, but some others feel bored.
 
@@ -551,8 +551,70 @@ So The weather temperature will be like a `prop` and your mood that depending on
 
 Let's know How to manage the component state.
 
-#### Initialize it 
+#### Initialize and use it 
 
-#### Use it 
+We can initialize the state of the component in the `constructor` method of the component `class`
+
+```jsx
+/**
+* @file Hello.js
+*/
+
+/* ... */
+class Hello extends React.Component {
+  constructor(props) {
+    // we must call super method at the first in order to define the class as React component
+    super(props)
+    
+    // we can initialize the state like the following
+    this.state = {mood: 'happy'}
+  }
+  
+  render() {
+    return (<div>
+    		<img src={this.state.mood + '.png'} />
+		Hello, {this.props.name} 
+            </div>);
+  }
+}
+```
+
+and the result will be something like that:
+
+<p align='center'>
+	:grinning: Hello, I'm Ahmed
+</p>
 
 #### Change it
+
+We can update the state using `setState`. Let's take an example
+
+```jsx
+class Hello extends React.Component {
+  constructor(props) { 
+    /* ... */
+    
+    // Add interval to change the mood every 0.5 sec
+    window.setInterval(this.toggleMood, 500) 
+  }
+  
+  toggleMood () {
+     let currentMood = (this.state.mood === ‘happy’)? ‘sad’ : ‘happy’; 
+     this.setState({mood: currentMood});
+  }
+  
+  render() {
+    return( <div>
+	      Hello, {this.props.name}
+	      <img src={this.state.mood + ‘.png’} />
+            </div> );
+  }
+}
+```
+
+The result will be something like that 
+
+<p align='center' >
+	<img width='25px' src='https://user-images.githubusercontent.com/11356226/33455319-5962aff6-d624-11e7-9687-8f6ea797c9ad.gif'/>
+	Hello, I'm Ahmed
+</p>

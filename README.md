@@ -24,6 +24,9 @@ In this tutorial we will talk about how to go through <strong> React </strong> a
     - [HTML Attributes](#html-attributes)
     - [Styles](#styles)
     - [Binding Events](#binding-events)
+  - [First Lego](#first-lego)
+    - [Create it](#create-it)
+    - [Render it](#render-it)
   
   
 ## Prerequisites
@@ -400,3 +403,12 @@ let select= (<select onChange = {function(e){v = e.target.value}}>
 			<option> Spain </option>
                 </select>);
 ```
+
+## First Lego
+> I mean First React Component :wink:
+As we have seen in [Big Picture](#big-picture) section that the component is the main component and here we will create it and then rendered it.
+
+### Create it
+
+
+### Render it

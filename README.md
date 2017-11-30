@@ -27,6 +27,9 @@ In this tutorial we will talk about how to go through <strong> React </strong> a
   - [First Lego](#first-lego)
     - [Create it](#create-it)
     - [Render it](#render-it)
+  - [Overview on React Components](#overview-on-react-components)
+    - [Props](#props)
+    - [States](#states)
   
   
 ## Prerequisites
@@ -478,4 +481,14 @@ What happens above is that we use <strong>ReactDOM</strong> method called `rende
 
 Now run this command: `yarn start`
 
-Congratulations :tada:! you just created your first React Component Keep the good spirit on :muscle:
+Congratulations :tada:! you just created your first React Component Keep the good spirit on :muscle:.
+
+## Overview on React Components
+
+### Props
+#### Use it
+
+### States
+#### Initialize it
+#### Use it 
+#### Change it

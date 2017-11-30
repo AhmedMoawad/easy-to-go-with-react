@@ -245,3 +245,21 @@ The component have a life cycle we will talk about it later in details to show h
 
 
 ## Virtual DOM
+> React use Virtual DOM in order to enhance the rich web application performance
+
+### Problem to Be solved
+Manipulating with the <strong>DOM</strong> is slow because changing it directly change the web page. So If you changed it many times you will suffer from rendering performance issue and nowadays Most of Web Apps needs to change the DOM frequently. So <strong> Virtual DOM </strong> came to solve this problem.
+
+### What is Virtual DOM
+> Source of following definition is [Codecademy](https://www.codecademy.com/articles/react-virtual-dom)
+
+A virtual DOM object is a representation of a DOM object, like a lightweight copy.
+
+A virtual DOM object has the same properties as a real DOM object, but it lacks the real thing's power to directly change what's on the screen.
+
+Manipulating the DOM is slow. Manipulating the virtual DOM is much faster, because nothing gets drawn onscreen. 
+
+Think of manipulating the virtual DOM as editing a blueprint, as opposed to moving rooms in an actual house.
+
+
+

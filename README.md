@@ -311,8 +311,51 @@ and <strong>React</strong> now will take it's responsibility to convert that to 
 Now, We will take a quick tour on How to write <strong>JSX</strong> in order to write React web apps
 
 ### Expressions
+Now we will introduce how treat with JavaScript Expressions and how to interpolate them in JSX templates in order to generate dynamic components.
+
+```jsx
+var name = ‘Ahmed’
+//Interpolation in JSX
+var element = <h1>Hello, { name }</h1>;
+
+//Use JSX as an Expression
+function sayHello(name){
+    if(name)
+          return <h1>Hello, { name }</h1>;
+    return <h1>Hello, Guest</h1>;
+}
+```
+
+So the generated HTML based on the above parameters will be:
+
+```html
+<h1>Hello, Ahmed</h1>
+```
 
 ### HTML Attributes
+Now let's talk about how to provide the elements with the HTML attributes
+
+> Note: JSX  use JavaScript Syntax (camelCase) not HTML Syntax in adding attributes i.e 
+
+There are the list of HTML attributes that you can use in JSX:
+
+```
+accept acceptCharset accessKey action allowFullScreen allowTransparency alt async 
+autoComplete autoFocus autoPlay capture cellPadding cellSpacing challenge charSet
+checked cite classID className colSpan cols content contentEditable contextMenu 
+controls controlsList coords crossOrigin data dateTime default defer dir disabled 
+download draggable encType form formAction formEncType formMethod formNoValidate 
+formTarget frameBorder headers height hidden high href hrefLang htmlFor httpEquiv 
+icon id inputMode integrity is keyParams keyType kind label lang list loop low 
+manifest marginHeight marginWidth max maxLength media mediaGroup method min 
+minLength multiple muted name noValidate nonce open optimum pattern placeholder
+poster preload profile radioGroup readOnly rel required reversed role rowSpan 
+rows sandbox scope scoped scrolling seamless selected shape size sizes span 
+spellCheck src srcDoc srcLang srcSet start step style summary tabIndex target
+title type useMap value width wmode wrap
+```
+
+You can notice that <strong>class</strong> HTML attribute has been renamed with `className` in order to doesn't make a conflict with `class` keyword in JavaScript. and Html label attribute <strong>for</strong> converted to `htmlFor` too.
 
 ### Styles
 

@@ -472,4 +472,6 @@ ReactDOM.render(
 
 What happens above is that we use <strong>ReactDOM</strong> method called `render` to render your application into the static html file called `index.html`.
 
-
+<p align='center'>
+    <img width='250px' src='https://user-images.githubusercontent.com/11356226/33451154-ce0994c2-d616-11e7-924e-3ab574f82682.png'/>
+<p>

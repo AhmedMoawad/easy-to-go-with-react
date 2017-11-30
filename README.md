@@ -1,6 +1,7 @@
 # React - The Lego Game
 In this tutorial we will talk about how to go through <strong> React </strong> and prepare you to be able to build web apps using the amazing <strong> React </strong> like you play with <em> lego bricks </em> :smile:.
 
+<br />
 
 ## Table of Contents
 
@@ -31,7 +32,7 @@ In this tutorial we will talk about how to go through <strong> React </strong> a
     - [Props](#props)
     - [State](#state)
   - [Treating with Forms](#treating-with-forms)
-  
+
 ## Prerequisites
 In order to go ahead with this tutorial, You should have good knowledge about the following
 
@@ -62,8 +63,11 @@ We will use in this tutorial the simple and easy method to create react app call
 
 You can visit [Create React App](https://github.com/facebookincubator/create-react-app) for more info.
 
+<br />
+
 ## Tutorial Map
 ![Tutorial Map](https://user-images.githubusercontent.com/11356226/33302591-e89a294a-d405-11e7-9485-cbffc33b79a5.png)
+<br />
 
 ## Quick Look at ES6
 > We will take here a quick tour on the new features on EchmaScript 6.
@@ -232,8 +236,10 @@ console.log(`My Name is ${fullName} and I'm ${myData.title}`)
 // Result: My Name is Ahmed Moawad and I'm Frontend Engineer
 
 ```
+<br />
 
 ## Why React
+<br />
 
 ## Big Picture
 
@@ -255,7 +261,7 @@ After Construction Your component Layout (HTML Template) will be rendered based 
 And If the component be provided by different <strong>props</strong> or the <strong>state</strong> of it changes, The component will be rendered another time with the new effect.
 
 The component have a life cycle we will talk about it later in details to show how to use it the best way.
-
+<br />
 
 ## Virtual DOM
 > React uses Virtual DOM in order to enhance the web application performance, So React is very fast.
@@ -273,8 +279,7 @@ A virtual DOM object has the same properties as a real DOM object, but it lacks 
 Manipulating the DOM is slow. Manipulating the virtual DOM is much faster, because nothing gets drawn onscreen. 
 
 Think of manipulating the virtual DOM as editing a blueprint, as opposed to moving rooms in an actual house.
-
-
+<br />
 
 ## JSX
 > It’s not a new language, but it is awesome
@@ -406,6 +411,7 @@ let select= (<select onChange = {function(e){v = e.target.value}}>
 			<option> Spain </option>
                 </select>);
 ```
+<br />
 
 ## First Lego
 > I mean First React Component :wink:
@@ -482,6 +488,7 @@ What happens above is that we use <strong>ReactDOM</strong> method called `rende
 Now run this command: `yarn start`
 
 Congratulations :tada:! you just created your first React Component Keep the good spirit on :muscle:.
+<br />
 
 ## Overview on React Components
 > I mean Lego bricks :confused:
@@ -618,7 +625,7 @@ The result will be something like that
 	<img width='25px' src='https://user-images.githubusercontent.com/11356226/33455319-5962aff6-d624-11e7-9687-8f6ea797c9ad.gif'/>
 	Hello, I'm Ahmed
 </p>
-
+<br />
 
 ## Treating with Forms
 ### Overview

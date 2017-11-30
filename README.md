@@ -371,13 +371,32 @@ You can add inline styles to your element using the follwing method
 ```jsx
 // Construct a Style Object
 var styles = {
-  backgroundColor: ‘red’,		// the style properties follows JavaScript naming convention
-  color : ‘orange’
+  backgroundColor: 'red',		// the style properties follows JavaScript naming convention
+  color : 'orange'
 }
 
 var element = <h1 style={ styles } >Hello There </h1>;
 
 ```
 
-### Handling Events
+### Binding Events
+Now, Let's talk about how to bind events to the element, we will use this naming covention:
 
+For Example, <strong>Click</strong> Event will be `onClick` instead of `onclick`.
+
+Here are some examples for doing that
+
+```jsx
+// Add Input event using anonymous function
+let input = <input type=‘text’ onInput={(e)=>(e.target.value)}/>;
+
+// Add Click Event use predifned function called someFn
+let button = <button onClick={ someFn }>Hello, React!</button>;
+
+var v;
+let select= (<select onChange = {function(e){v = e.target.value}}>
+		 	<option> Egypt </option>
+			<option> USA </option>
+			<option> Spain </option>
+                </select>);
+```

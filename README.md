@@ -17,6 +17,13 @@ In this tutorial we will talk about how to go through <strong> React </strong> a
   - [Why React](#why-react)
   - [Big Picture](#big-picture)
   - [Virtual DOM](#virtual-dom)
+  - [JSX](#jsx)
+    - [Intro](#intro)
+    - [What JSX compiles to](#what-jsx-compiles-to)
+    - [Expressions](#expressions)
+    - [HTML Attributes](#html-attributes)
+    - [Styles](#styles)
+    - [Handling Events](#handling-events)
   
   
 ## Prerequisites
@@ -262,4 +269,52 @@ Manipulating the DOM is slow. Manipulating the virtual DOM is much faster, becau
 Think of manipulating the virtual DOM as editing a blueprint, as opposed to moving rooms in an actual house.
 
 
+
+## JSX
+> It’s not a new language, but it is awesome
+
+### Intro
+Look at the following Code
+
+```jsx
+const element = <h1>Hello, React lovers!</h1>;
+```
+<p align=center>
+  What is that Code? 
+</p>
+<p align=center>
+  It's neither HTML nor JavaScript. It just the awesome <strong>JSX</strong>.
+</p>
+
+### What JSX compiles to
+> We use JSX to transpile it to vanilla JavaScript using [Babel](https://babeljs.io/)
+
+The following code is JSX:
+```jsx
+const element = <h1 className = ‘greet’>Hello, React Lovers!</h1>;
+```
+will be compiled using [Babel](https://babeljs.io/) to the following Code:
+
+```javascript
+// Create a React Element
+const element = React.createElement(
+	‘h1’ ,                                  // The Tag Name of the element
+	{className: ‘greet’} ,                  // The properties of this element
+	‘Hello, React Lovers!’                  // HTML Content inside the Element
+)
+```
+and <strong>React</strong> now will take it's responsibility to convert that to HTML DOM Element as follows:
+
+```html
+<h1 class='greet'> Hello, React Lovers!</h1>
+```
+Now, We will take a quick tour on How to write <strong>JSX</strong> in order to write React web apps
+
+### Expressions
+
+### HTML Attributes
+
+### Styles
+
+### Handling Events
 

@@ -474,4 +474,8 @@ What happens above is that we use <strong>ReactDOM</strong> method called `rende
 
 <p align='center'>
     <img width='250px' src='https://user-images.githubusercontent.com/11356226/33451154-ce0994c2-d616-11e7-924e-3ab574f82682.png'/>
-<p>
+</p>
+
+Now run this command: `yarn start`
+
+Congratulations :tada:! you just created your first React Component Keep the good spirit on :muscle:

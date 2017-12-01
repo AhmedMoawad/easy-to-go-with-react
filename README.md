@@ -43,6 +43,17 @@ In this tutorial we will talk about how to go through <strong> React </strong> a
     - [componentWillUpdate](#componentwillupdate)
     - [componentDidUpdate](#componentdidupdate)
     - [componentWillUnmount](#componentwillunmount)
+  - [Communication between Components](#communication-between-components)
+    - [From Parent to Child](#from-parent-to-child)
+    - [From Child to Parent](#from-child-to-parent)
+- [Type checking with Prop Types](#type-checking-with-prop-types)
+    - [Use PropTypes](#use-proptypes)
+    - [Basic Types](#basic-types)
+    - [Enums](#enums)
+    - [Collection of Specific Type](#collection-of-specific-type)
+    - [Shape](#shape)
+    - [isRequired](#isrequired)
+    - [isInstance](#isinstance)
 
 ## Prerequisites
 In order to go ahead with this tutorial, You should have good knowledge about the following
@@ -969,4 +980,18 @@ is invoked immediately before a component is unmounted and destroyed
 
 ##### Uses
 1. Perform any necessary cleanup (tear down) tasks in this method like removing timeouts or intervals that is used during component life cycle. 
+<br />
 
+## Communication between Components
+### From Parent to Child
+### From Child to Parent
+<br />
+
+## Type checking with Prop Types
+### Use PropTypes
+### Basic Types
+### Enums
+### Collection of Specific Type
+### Shape
+### isRequired
+### isInstance

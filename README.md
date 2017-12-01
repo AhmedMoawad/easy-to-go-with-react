@@ -294,7 +294,7 @@ React has it's official [DevTools](https://chrome.google.com/webstore/detail/rea
 ##### 7. React scale from small to Big applications
 React give you the ability to produce small scale appication and can easily scale to a large web applications.
 
-There are many other reasons to develop with React. I hope you touch them while developing with React
+> There are many other reasons to develop with React. I hope you touch them while developing with React
 <br />
 
 ## Big Picture

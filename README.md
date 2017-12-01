@@ -630,7 +630,67 @@ The result will be something like that
 <br />
 
 ## Treating with Forms
+> In React, We doesn’t treat forms as like classic way
+
 ### Overview
-### Create It
-### Implement it
-#### Fix it
+<p align='center'>
+	<img width="453" src="https://user-images.githubusercontent.com/11356226/33496498-24459ca2-d6d3-11e7-81bb-97f3f3a90c57.png">
+</p>
+
+Submitting Form doesn’t mean reloading the web page because that's not the react way and herrewe treat with a single page application.
+
+Form Component State are the source of truth for the form values so when we proceed to submit the form we get it's values from the state of it's React component in order to maintain the unidirectional data flow mechanism.
+
+### Implement It
+Here are an example of how to create a form and manage it's submittion.
+
+```jsx
+class CustomForm extends React.Component {
+  constructor(props) { 
+    super(props);
+    
+    // initialize the form values state here
+    this.state = {value: ''};
+    
+    // bind all prototype methods to the component context - we will discuss this issue below 
+    this.handleSubmit = this.handleSubmit.bind(this)
+    this.handleChange = this.handleChange.bind(this)
+
+  }
+  
+  render() {
+    return <form onSubmit={this.handleSubmit}>
+              <input type="text" value={this.state.value} onChange={this.handleChange} />
+	      <input type="submit" value="Submit" />
+      	   </form>;
+  }
+  
+  handleChange (e) {
+     // update the state based on the changing input value
+     this.setState({value: e.target.value})
+  }
+  
+  handleSubmit (e) {
+     e.preventDefault()
+     /*
+     * We have now all the form values stored on the component state,
+     * So we can make an ajax request or validate the date before that, 
+     * or do whatever your business required
+     */
+  }
+}
+
+```
+
+Now let's discuss what we have done with the above Form Component in many points:
+
+1. If we want to have a controlled Component, we must map every form input values to a state property as we have done above.
+
+2. We notice that we use `bind` method to bind `handleSubmit` and `handleChange` methods to the component context. That's because when we use it in the jsx template these methods loses the context of the component so if we didn't bind them like that then if we use `this` keyword in these methods it will not refer to any context so must bind it hardly to the context that we want in order to everything go as we have planned.
+
+3. We notice that we bind the input value attribute to the state property `value` so the value of this component came from one source of truth (The state) and then we handle `change` event on the input to get the value that came from the user and update the state with it so the bound input value will be changed by changing the state.
+
+4. In `handleChange` we can validate the coming value before updating the state with in order to grauntee that the values that will be submitted is correct.
+
+5. In `handleSubmit` we prevent the default behaviour from happening, and then we can use the state as the source of the form values that we will submit.
+

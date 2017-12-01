@@ -282,14 +282,14 @@ React uses [Virtual Dom](#virtual-dom) mechanism to improve the application rend
 ##### 3. React has a single source of truth
 React adopt the concept of unidirectional Data Binding. So it removes the ambiguity of conflicts results from the existance of different sources of the data.
 
-##### 4. React has a full support to [Redux]
+##### 4. React has a full support to [Redux](https://redux.js.org)
 So You can manage your application state with the awesome Redux.
 
 ##### 5. React has a growing EcoSystem
-Facebook and React community developed React and it's ecosystem rapidly. You can find ReactNative for mobile development, ReactRouter for client and server rendering, Redux integration for managing your Application State, Jest for testing your React Applications and many others.
+Facebook and React community developed React and it's ecosystem rapidly. You can find [ReactNative](https://facebook.github.io/react-native/) for mobile development, [ReactRouter](https://reacttraining.com/react-router/) for client and server rendering, [Redux](https://redux.js.org) integration for managing your Application State, [Jest](https://facebook.github.io/jest/) and [Enzyme](http://airbnb.io/enzyme)for testing your React Applications and many others.
 
 ##### 6. React has awesome DevTools
-React has it's official DevTools to enhance the way you debug your React application.
+React has it's official [DevTools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en) to enhance the way you debug your React application.
 
 ##### 7. React scale from small to Big applications
 React give you the ability to produce small scale appication and can easily scale to a large web applications.

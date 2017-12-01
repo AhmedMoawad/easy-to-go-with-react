@@ -33,6 +33,16 @@ In this tutorial we will talk about how to go through <strong> React </strong> a
     - [State](#state)
   - [Treating with Forms](#treating-with-forms)
   - [Tips and Tricks: Part 1](#tips-and-tricks)
+  - [Component Life Cycle](#component-life-cycle)
+    - [constructor](#constructor)
+    - [componentWillMount](#componentwillmount)
+    - [render](#render)
+    - [componentDidMount](#componentdidmount)
+    - [componentWillReceiveProps](#componentwillreceiveprops)
+    - [shouldComponentUpdate](#shouldcomponentupdate)
+    - [componentWillUpdate](#componentwillupdate)
+    - [componentDidUpdate](#componentdidupdate)
+    - [componentWillUnmount](#componentwillunmount)
 
 ## Prerequisites
 In order to go ahead with this tutorial, You should have good knowledge about the following
@@ -768,3 +778,14 @@ Now the result will be something like the following:
    <li>Sara</li>
 </ul>
 <br />
+
+## Component Life Cycle
+### `constructor`
+### `componentWillMount`
+### `render`
+### `componentDidMount`
+### `componentWillReceiveProps`
+### `shouldComponentUpdate`
+### `componentWillUpdate`
+### `componentDidUpdate`
+### `componentWillUnmount`

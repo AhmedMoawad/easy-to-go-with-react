@@ -47,13 +47,6 @@ In this tutorial we will talk about how to go through <strong> React </strong> a
     - [componentDidUpdate](#componentdidupdate)
     - [componentWillUnmount](#componentwillunmount)
 - [Type checking with Prop Types](#type-checking-with-prop-types)
-    - [Use PropTypes](#use-proptypes)
-    - [Basic Types](#basic-types)
-    - [Enums](#enums)
-    - [Collection of Specific Type](#collection-of-specific-type)
-    - [Shape](#shape)
-    - [isRequired](#isrequired)
-    - [isInstance](#isinstance)
 
 ## Prerequisites
 In order to go ahead with this tutorial, You should have good knowledge about the following

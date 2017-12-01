@@ -780,6 +780,15 @@ Now the result will be something like the following:
 <br />
 
 ## Component Life Cycle
+> And Component Said: Yes, I have my own life. Deal with it
+
+Life Cycle is a way to hook the Component life phases to do the right action on the right time
+
+Component Have three main life phases:
+- Mounting Phase
+
+- Updating Phase
+- Unmounting Phase
 ### `constructor`
 ### `componentWillMount`
 ### `render`

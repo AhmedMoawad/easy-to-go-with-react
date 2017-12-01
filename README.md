@@ -15,7 +15,7 @@ In this tutorial we will talk about how to go through <strong> React </strong> a
     - [Default Parameters](#default-parameters)
     - [String Interpolation](#string-interpolation)
     - [Modules](#modules)
-  - [Why React](#why-react)
+  - [React Overview](#react-overviewt)
   - [Big Picture](#big-picture)
   - [Virtual DOM](#virtual-dom)
   - [JSX](#jsx)
@@ -260,7 +260,41 @@ console.log(`My Name is ${fullName} and I'm ${myData.title}`)
 ```
 <br />
 
-## Why React
+## React Overview
+In this section we will talk about React and why using it over other like libraries.
+
+> If you don't need from me to prove to you that React is amazing :smile: you can just move to [Big Picture](#big-picture) section directly.
+
+#### What is React
+> Source of following definition is from [React official website](https://reactjs.org/tutorial/tutorial.html#what-is-react)
+
+React is a declarative, efficient, and flexible JavaScript library for building user interfaces.
+
+#### So Why React? 
+Of course, there are many reasons to use <strong>React</strong> but I will write down some of them:
+
+##### 1. React is a component based Libray
+That's mean with React you can produce reusable isolated elements called components that reduce the redundancy of your application elements, improve code quality and inspire collaboration with it's community.
+
+##### 2. React is Fast
+React uses [Virtual Dom](#virtual-dom) mechanism to improve the application rendering performance and reduce the unnecessary rendering and modification So your application will be very healthy and efficient.
+
+##### 3. React has a single source of truth
+React adopt the concept of unidirectional Data Binding. So it removes the ambiguity of conflicts results from the existance of different sources of the data.
+
+##### 4. React has a full support to [Redux]
+So You can manage your application state with the awesome Redux.
+
+##### 5. React has a growing EcoSystem
+Facebook and React community developed React and it's ecosystem rapidly. You can find ReactNative for mobile development, ReactRouter for client and server rendering, Redux integration for managing your Application State, Jest for testing your React Applications and many others.
+
+##### 6. React has awesome DevTools
+React has it's official DevTools to enhance the way you debug your React application.
+
+##### 7. React scale from small to Big applications
+React give you the ability to produce small scale appication and can easily scale to a large web applications.
+
+There are many other reasons to develop with React. I hope you touch them while developing with React
 <br />
 
 ## Big Picture

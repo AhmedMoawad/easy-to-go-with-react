@@ -814,11 +814,151 @@ This phase occurs when the component is about to be removed from the DOM and des
  <br />
  
 ### `constructor`
+##### Definition    
+```javascript 
+constructor(props)
+```
+`props` is the initial props that provided to the component
+
+##### Calling Time
+The constructor for a React component is called before it is mounted
+
+##### Uses
+1. Initialize The Component State Object
+2. Bind The methods to the component
+
+##### Notes
+1. If you didn’t use it , no need to implement it
+2. When implement it don’t forget to call `super(props)` before anything else.
+
 ### `componentWillMount`
+##### Definition    
+```javascript 
+componentWillMount()
+```
+##### Calling Time
+invoked immediately before mounting occurs and before `render` method
+
+##### Uses
+1. Update The Component State based on Props (Must use `setState` method)
+
+##### Notes
+1. It runs one time through the Component Life Cycle
+
 ### `render`
+##### Definition    
+```javascript 
+render()
+```
+
+##### Calling Time
+Called After `componentWillMount` & `componentWillUpdate`
+
+##### Uses
+1. Use States & Props to return a Single React Element represent the Component.
+2. We can return `null` or `false` to indicate that you don't want anything rendered
+
+
+##### Notes
+1. render method is required to be implemented.
+2. render method should be pure function.
+
 ### `componentDidMount`
+##### Definition    
+```javascript 
+componentDidMount()
+```
+
+##### Calling Time
+invoked immediately after a component is mounted
+
+##### Uses
+1. Treat with DOM executed here
+2. Load data from remote server
+
+##### Notes
+1. Run one time through the Component Life Cycle.
+2. If we use `setState` it will run render method another time 
+
 ### `componentWillReceiveProps`
+##### Definition    
+```javascript 
+componentWillReceiveProps(nextProps)
+```
+`nextProps` is the new provided props that still not attached to the component
+
+##### Calling Time
+invoked before a mounted component receives new `props`
+
+##### Uses
+1. update the state in response to prop changes.
+
+##### Notes
+1. Calling this method doesn’t mean the value of props has changed.
+2. Calling setState generally doesn't trigger this method.
+
 ### `shouldComponentUpdate`
+##### Definition    
+```javascript 
+shouldComponentUpdate(nextProps, nextState)
+```
+`nextProps` is the new provided props that still not attached to the component
+`nextState` is the updated state after using `setState` method on the previous hooks that still not attached to the component
+
+##### Calling Time
+invoked before rendering when new props or state are being received
+
+##### Uses
+1. Allows your Component to exit the Updating Phase if there is no reason to apply a new `render`.
+
+##### Notes
+1. When implement it don’t forget to return <strong>Boolean</strong> value.
+2. Returning `true` means that `render` method will be called.
+3. Returning `false` means that `render` method won’t be called.
+
 ### `componentWillUpdate`
+##### Definition    
+```javascript 
+componentWillUpdate(nextProps, nextState)
+```
+`nextProps` is the new provided props that still not attached to the component
+`nextState` is the updated state after using `setState` method on the previous hooks that still not attached to the component
+
+##### Calling Time
+invoked immediately before rendering when new props or state are being received
+
+##### Uses
+1. perform preparation tasks before an update occurs
+
+##### Notes
+1. you cannot call `setState` method here because it will make the component runs in recussive way and will raise maximumm stack exceed.
+
 ### `componentDidUpdate`
+##### Definition    
+```javascript 
+componentDidUpdate(prevProps, prevState)
+```
+`prevProps` is the props that previously attached to the component but it is not now it's current props
+`prevState` is the state that previously attached to the component but it is not now it's current state
+
+##### Calling Time
+is invoked immediately after updating occurs
+
+##### Uses
+1. Treat with DOM executed here
+2. Load data from remote server
+
+##### Notes
+1. You can control here if you want to get data from the remote server or not based on the changing of props
+
 ### `componentWillUnmount`
+##### Definition    
+```javascript 
+componentWillUnmount()
+```
+##### Calling Time
+is invoked immediately before a component is unmounted and destroyed
+
+##### Uses
+1. Perform any necessary cleanup (tear down) tasks in this method like removing timeouts or intervals that is used during component life cycle. 
+

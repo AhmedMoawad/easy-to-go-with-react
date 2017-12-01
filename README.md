@@ -745,3 +745,26 @@ let arr = ['A', 'M', 'Z']
 // Now let generate an array of char code based on the previous array
 let codeArr = arr.map(ch => ch.charCodeAt(0))    // codeArr will be [65, 77, 90]
 ```
+
+Now let's use it to generate alist of elements in React:
+```jsx
+
+class NameList extends React.Component {
+  render() {
+    return <ul>
+	     {this.props.users.map( user => <li>{ user }</li> )}
+	   </ul>;
+    }
+}
+
+ReactDOM.render( <NameList users = {['Ahmed', 'Ali', 'Sara']} />, document.getElementById('root'));
+
+```
+Now the result will be something like the following:
+
+<ul>
+   <li>Ahmed</li>
+   <li>Ali</li>
+   <li>Sara</li>
+</ul>
+<br />

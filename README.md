@@ -32,6 +32,7 @@ In this tutorial we will talk about how to go through <strong> React </strong> a
     - [Props](#props)
     - [State](#state)
   - [Treating with Forms](#treating-with-forms)
+  - [Tips and Tricks](#tips-and-tricks)
 
 ## Prerequisites
 In order to go ahead with this tutorial, You should have good knowledge about the following
@@ -693,4 +694,41 @@ Now let's discuss what we have done with the above Form Component in many points
 4. In `handleChange` we can validate the coming value before updating the state with in order to grauntee that the values that will be submitted is correct.
 
 5. In `handleSubmit` we prevent the default behaviour from happening, and then we can use the state as the source of the form values that we will submit.
+
+## Tips and Tricks
+
+### Use the magic of `&&`
+> Let's explain firstly how `&&` works
+
+`&&` operator seeks for the falsy value of the two operands. And it will stop seeking when it finds any <strong>falsy</strong> and return the last value it stops at. Here are some examples of it
+
+> Note: Falsy values in JavaScript are (`false`, `0`, `NaN`, `''`, `undefined`, `null`)
+
+```javascript
+4 && 0           // return 0
+'' && 'React'    // return ''
+true && 5	 // return 5 (not true)
+```
+
+now let's show how to use it in React:
+
+```jsx
+class Visit extends React.Component {
+  render() {
+    return <div>
+	     { this.props.visits > 0 && <p> You have {this.props.visits} visits </p> }
+	   </div>;
+  }
+}
+
+
+ReactDOM.render( <Visit visits = { 6 } />, document.getElementById('root'));
+
+```
+When rendering this compoenent it will show the following
+
+<p align='center'> You have 6 visits </p>
+<br />
+
+That's because the `visits` prop is `6` that is greater than `0` so the first expression will return `true` So `&&` will continue seeking for the falsy value so it returns the second operand which is the element that we want to render if the `visits` prop is greater than `0`.
 

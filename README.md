@@ -786,9 +786,28 @@ Life Cycle is a way to hook the Component life phases to do the right action on 
 
 Component Have three main life phases:
 - Mounting Phase
-
+ > This is the phase where the component been constructed, initialized and rendered for the first time on the DOM.
+ 
+ <p align='center'>
+	<img width="781" alt="screen shot 2017-12-01 at 9 40 38 pm" src="https://user-images.githubusercontent.com/11356226/33500141-6ec1ad86-d6e0-11e7-8ee5-01c6f5d71f79.png">
+ </p>
+ <br />
+ 
 - Updating Phase
+ > After Mounting the Component, Anytime, the state or props change the component will enter this phase.
+ 
+ <p align='center'>
+	<img width="783" alt="screen shot 2017-12-01 at 9 50 19 pm" src="https://user-images.githubusercontent.com/11356226/33500514-b7c7780c-d6e1-11e7-9e1c-25e8ab19d848.png">
+ <br />
+ 
 - Unmounting Phase
+ > This phase occurs when the component is about to be removed from the DOM and destroyed.
+ 
+  <p align='center'>
+	<img width="778" alt="screen shot 2017-12-01 at 9 50 58 pm" src="https://user-images.githubusercontent.com/11356226/33500593-0643898a-d6e2-11e7-9d65-30a6959b0e2f.png">
+ </p>
+ <br />
+ 
 ### `constructor`
 ### `componentWillMount`
 ### `render`

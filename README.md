@@ -826,6 +826,10 @@ Now the result will be something like the following:
 <br />
 
 ## Communication between Components
+
+<p align='center'>
+   <img width="781" alt="screen shot 2017-12-01 at 11 44 36 pm" src="https://user-images.githubusercontent.com/11356226/33504822-ad50ef74-d6f1-11e7-8967-aa2532a03a9b.png">
+</p>
 ### From Parent to Child
 ### From Child to Parent
 

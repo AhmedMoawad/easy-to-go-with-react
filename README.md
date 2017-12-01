@@ -33,6 +33,9 @@ In this tutorial we will talk about how to go through <strong> React </strong> a
     - [State](#state)
   - [Treating with Forms](#treating-with-forms)
   - [Tips and Tricks: Part 1](#tips-and-tricks)
+  - [Communication between Components](#communication-between-components)
+    - [From Parent to Child](#from-parent-to-child)
+    - [From Child to Parent](#from-child-to-parent)
   - [Component Life Cycle](#component-life-cycle)
     - [constructor](#constructor)
     - [componentWillMount](#componentwillmount)
@@ -43,9 +46,6 @@ In this tutorial we will talk about how to go through <strong> React </strong> a
     - [componentWillUpdate](#componentwillupdate)
     - [componentDidUpdate](#componentdidupdate)
     - [componentWillUnmount](#componentwillunmount)
-  - [Communication between Components](#communication-between-components)
-    - [From Parent to Child](#from-parent-to-child)
-    - [From Child to Parent](#from-child-to-parent)
 - [Type checking with Prop Types](#type-checking-with-prop-types)
     - [Use PropTypes](#use-proptypes)
     - [Basic Types](#basic-types)
@@ -825,6 +825,12 @@ Now the result will be something like the following:
 </ul>
 <br />
 
+## Communication between Components
+### From Parent to Child
+### From Child to Parent
+
+<br />
+
 ## Component Life Cycle
 > And Component Said: Yes, I have my own life. Deal with it
 
@@ -1015,11 +1021,7 @@ is invoked immediately before a component is unmounted and destroyed
 
 ##### Uses
 1. Perform any necessary cleanup (tear down) tasks in this method like removing timeouts or intervals that is used during component life cycle. 
-<br />
 
-## Communication between Components
-### From Parent to Child
-### From Child to Parent
 <br />
 
 ## Type checking with Prop Types

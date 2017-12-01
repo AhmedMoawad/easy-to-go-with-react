@@ -882,6 +882,7 @@ invoked immediately after a component is mounted
 ##### Notes
 1. Run one time through the Component Life Cycle.
 2. If we use `setState` it will run render method another time 
+<br />
 
 ### `componentWillReceiveProps`
 ##### Definition    

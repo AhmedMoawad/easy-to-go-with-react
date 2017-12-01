@@ -830,6 +830,7 @@ The constructor for a React component is called before it is mounted
 ##### Notes
 1. If you didn’t use it , no need to implement it
 2. When implement it don’t forget to call `super(props)` before anything else.
+<br />
 
 ### `componentWillMount`
 ##### Definition    
@@ -844,6 +845,7 @@ invoked immediately before mounting occurs and before `render` method
 
 ##### Notes
 1. It runs one time through the Component Life Cycle
+<br />
 
 ### `render`
 ##### Definition    
@@ -862,6 +864,7 @@ Called After `componentWillMount` & `componentWillUpdate`
 ##### Notes
 1. render method is required to be implemented.
 2. render method should be pure function.
+<br />
 
 ### `componentDidMount`
 ##### Definition    
@@ -896,6 +899,7 @@ invoked before a mounted component receives new `props`
 ##### Notes
 1. Calling this method doesn’t mean the value of props has changed.
 2. Calling setState generally doesn't trigger this method.
+<br />
 
 ### `shouldComponentUpdate`
 ##### Definition    
@@ -915,6 +919,7 @@ invoked before rendering when new props or state are being received
 1. When implement it don’t forget to return <strong>Boolean</strong> value.
 2. Returning `true` means that `render` method will be called.
 3. Returning `false` means that `render` method won’t be called.
+<br />
 
 ### `componentWillUpdate`
 ##### Definition    
@@ -932,6 +937,7 @@ invoked immediately before rendering when new props or state are being received
 
 ##### Notes
 1. you cannot call `setState` method here because it will make the component runs in recussive way and will raise maximumm stack exceed.
+<br />
 
 ### `componentDidUpdate`
 ##### Definition    
@@ -950,6 +956,7 @@ is invoked immediately after updating occurs
 
 ##### Notes
 1. You can control here if you want to get data from the remote server or not based on the changing of props
+<br />
 
 ### `componentWillUnmount`
 ##### Definition    

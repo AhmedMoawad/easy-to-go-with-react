@@ -15,7 +15,7 @@ In this tutorial we will talk about how to go through <strong> React </strong> a
     - [Default Parameters](#default-parameters)
     - [String Interpolation](#string-interpolation)
     - [Modules](#modules)
-  - [React Overview](#react-overviewt)
+  - [React Overview](#react-overview)
   - [Big Picture](#big-picture)
   - [Virtual DOM](#virtual-dom)
   - [JSX](#jsx)

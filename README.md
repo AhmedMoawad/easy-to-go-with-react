@@ -61,7 +61,7 @@ In order to go ahead with this tutorial, You should have good knowledge about th
 - [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
 - [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
 - [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-
+<br />
 
 ## Setup
 
@@ -84,7 +84,6 @@ We will use in this tutorial the simple and easy method to create react app call
 ```
 
 You can visit [Create React App](https://github.com/facebookincubator/create-react-app) for more info.
-
 <br />
 
 ## Tutorial Map
@@ -317,6 +316,7 @@ After Construction Your component Layout (HTML Template) will be rendered based 
 And If the component be provided by different <strong>props</strong> or the <strong>state</strong> of it changes, The component will be rendered another time with the new effect.
 
 The component have a life cycle we will talk about it later in details to show how to use it the best way.
+
 <br />
 
 ## Virtual DOM
@@ -335,6 +335,7 @@ A virtual DOM object has the same properties as a real DOM object, but it lacks 
 Manipulating the DOM is slow. Manipulating the virtual DOM is much faster, because nothing gets drawn onscreen. 
 
 Think of manipulating the virtual DOM as editing a blueprint, as opposed to moving rooms in an actual house.
+
 <br />
 
 ## JSX

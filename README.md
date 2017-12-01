@@ -32,7 +32,7 @@ In this tutorial we will talk about how to go through <strong> React </strong> a
     - [Props](#props)
     - [State](#state)
   - [Treating with Forms](#treating-with-forms)
-  - [Tips and Tricks](#tips-and-tricks)
+  - [Tips and Tricks: Part 1](#tips-and-tricks)
 
 ## Prerequisites
 In order to go ahead with this tutorial, You should have good knowledge about the following
@@ -732,3 +732,16 @@ When rendering this compoenent it will show the following
 
 That's because the `visits` prop is `6` that is greater than `0` so the first expression will return `true` So `&&` will continue seeking for the falsy value so it returns the second operand which is the element that we want to render if the `visits` prop is greater than `0`.
 
+### Use the `map` function
+
+Map function is one of the JavaScript Array's methods that use an array to produce another array based on the first one. Here is an example of it. 
+
+And You can read about it in [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map) 
+
+```javascript
+
+let arr = ['A', 'M', 'Z']
+
+// Now let generate an array of char code based on the previous array
+let codeArr = arr.map(ch => ch.charCodeAt(0))    // codeArr will be [65, 77, 90]
+```

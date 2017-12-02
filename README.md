@@ -824,8 +824,87 @@ Now the result will be something like the following:
    <img width="781" alt="screen shot 2017-12-01 at 11 44 36 pm" src="https://user-images.githubusercontent.com/11356226/33504822-ad50ef74-d6f1-11e7-8967-aa2532a03a9b.png">
 </p>
 
+The above illustration explains how components communicate with each others. 
+
+let's devide the communication between components into two types based on their position:
+
 ### From Parent to Child
+This is the tradional way of communication because the Parent component is responsible for providing the props to it's children So when parent want to communicate with child it provide it with props.
+
+> Here is an example of that:
+
+```jsx
+// Build Child Component
+class Child extends React.Component {
+  render() {
+    return <p>{this.props.name}</p>;
+  }
+}
+
+```
+
+```jsx
+
+import Child from 'Child'
+
+// Use Child Component
+class Parent extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {name: 'Ahmed'}
+  }
+  render() {
+    return <div>
+		<Child name = {this.state.name} />
+	    </div>;
+  }
+}
+
+```
+
+So We see here that Child prop `name` is depending on the Parent `name` state property.
+
 ### From Child to Parent
+Another way of communication is when child want to notify the parent about something change in it. So In React we use callback Invoking that's mean that the parent provide the component with callback prop that will be invoked on the right time to change something in Parent Component.
+
+> Let's take an Example
+
+```jsx
+class Parent extends React.Component {
+  /* ... */
+  render() {
+    return <div> 
+    	     <p>{this.state.value}</p>
+	     {/* we can provide the callback as prop like onChange prop*/}  
+	     <Child name={this.state.name} onChange={this.handleChange} />
+           </div>;
+  }
+  
+  handleChange(v){
+	this.setState({value : v})	
+  }
+}
+
+```
+```jsx
+class Child extends React.Component {
+  /* ... */
+  render() {
+    return <div> 
+	      <p>{this.props.name}</p>
+              <input onChange={this.handleInputChange} /> 
+	   </div>;
+  }
+  
+  handleInputChange(e){
+  	// Here we use onChange Prop to invoke the parent handleChange Method
+  	this.props.onChange(e.target.value)	
+  }
+}
+
+```
+
+As we have seen above in child component if the user change the input `handleInputChange` will be invoked. And when `handleInputChange` have invoked it will invoke the provided method prop `onChange` and pass it the required parameter that will change the state of parent.
 
 <br />
 

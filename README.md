@@ -32,7 +32,7 @@ In this tutorial we will talk about how to go through <strong> React </strong> a
     - [Props](#props)
     - [State](#state)
   - [Types of Components](#types-of-components)
-    - [Class Components](#class-components)
+    - [Classical Components](#classical-components)
     - [Functional Components](#functional-components)
     - [Pure Components](#pure-components)
   - [Treating with Forms](#treating-with-forms)
@@ -51,6 +51,12 @@ In this tutorial we will talk about how to go through <strong> React </strong> a
     - [componentDidUpdate](#componentdidupdate)
     - [componentWillUnmount](#componentwillunmount)
 - [Type checking with PropTypes](#type-checking-with-proptypes)
+- [Final Words](#final-words)
+- [Author](#author)
+- [Contribution](#contribution)
+- [Support Us](#support-us)
+<br />
+
 
 ## Prerequisites
 In order to go ahead with this tutorial, You should have good knowledge about the following
@@ -737,7 +743,7 @@ const SimpleComp = (props) => {
 
 > Note that `props` here is an function argument so we don't use `this`.
 
-### Pure Component
+### Pure Components
 Pure Component are used in order to boost the app performance and don't make unnecessary rendering while the next `state` and `props` are the same as the previous ones.
 
 So <strong>Pure Components</strong> are the same as [classical components](classical-components) but it only shallowed [`shouldComponentUpdate`](#shouldcomponentupdate) method and make it doesn't return true if the `props` and `state` didn't change while updating.
@@ -1336,4 +1342,29 @@ Student.propTypes = {
 
 > Note: Instead of make the `prop` required, you can assign to it a default value if it's not provided. See [defaultProps]('#defaultprops') section.
 
+<br />
 
+## Final Words
+I hope that this tutorial helps to understand React better and make you able now to develop a solid web application using React. We are still improve it and will not stop improving and updating it :smile:.
+
+<br />
+
+## Author
+
+#### [Ahmed Moawad](https://github.com/AhmedMoawad)
+
+<br />
+
+## Contribution
+
+This tutorial intents to simplify the work with React and makes you understand every single line you code. So if anyone see that we can improve it, make it more infortmative and clarified.
+
+You can make a <strong>pull request</strong> with the changes or raise an <strong> issue</strong>.
+
+<br />
+
+## Support Us
+You can support us with any of these ways:
+- Add your valuable contribution to the repo.
+- Add your :star: Star if you finds it helpful.
+- Share it on your community.

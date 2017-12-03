@@ -325,7 +325,7 @@ A virtual DOM object is a representation of a DOM object, like a lightweight cop
 
 A virtual DOM object has the same properties as a real DOM object, but it lacks the real thing's power to directly change what's on the screen.
 
-Manipulating the DOM is slow. Manipulating the virtual DOM is much faster, because nothing gets drawn onscreen. 
+Manipulating the DOM is slow. Manipulating the virtual DOM is much faster, because nothing gets drawn onscreen. So React updates all DOM changes on the virtual DOM then at the end it will compare the `actual DOM` with the `virtual DOM` and only redraw the affected components by these changes.
 
 Think of manipulating the virtual DOM as editing a blueprint, as opposed to moving rooms in an actual house.
 

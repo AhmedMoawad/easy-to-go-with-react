@@ -683,8 +683,80 @@ The result will be something like that
 
 <br />
 
-## types of Components
-<em> <strong>TODO</strong> Add the contents of this section </em>
+## Types of Components
+There are three main types of components and everyone of them has a use case in order to improve code quality and app performance. So we will display them on the following sections:
+
+### Classical Components
+> Classical means that the component is a class (If you work without the sugar of es6 the component will be factory method).
+
+This is the default type of component that gives you ability to:
+- Initialize and Use the `state`
+- Add Implementation for [Life Cycle](#component-life-cycle) hook methods.
+
+> Example:
+
+```jsx
+class Comp extends React.Component {
+  constructor(props) { 
+    super(props);
+    // initialize the state here
+    this.state = {value: ''};
+
+  }
+  
+  render() {
+    return <div> {this.state.value} </div>;
+  }
+  
+  componentWillMount (e) {
+     // Implement life cycle hook if you want
+  }
+}
+
+```
+
+So if your component is as simple as getting props and renders component template based on it only, you can use the [Functional Components](#functional-components) instead. 
+
+### Functional Components
+> We can call them <strong>stateless</strong> components too.
+
+These component are a pure functions that take `props` as input and return an HTML Template based on it. So it's called stateless components because they don't use state.
+
+The whole component will act like `render` method in [classical components](#classical-components).
+
+> For Example:
+
+```jsx
+const SimpleComp = (props) => {
+   return <div> 
+   		<h1>{props.name}</h1>
+		<p>{props.about}</p>
+   	  </div>;
+}
+```
+
+> Note that `props` here is an function argument so we don't use `this`.
+
+### Pure Component
+Pure Component are used in order to boost the app performance and don't make unnecessary rendering while the next `state` and `props` are the same as the previous ones.
+
+So <strong>Pure Components</strong> are the same as [classical components](classical-components) but it only shallowed [`shouldComponentUpdate`](#shouldcomponentupdate) method and make it doesn't return true if the `props` and `state` didn't change while updating.
+
+> Example:
+
+```jsx
+class PureComp extends React.PureComponent {
+  constructor(props) { /* ... */}
+
+  render() {
+    return <div> {this.state.value} </div>;
+  }
+}
+
+```
+
+> Note: Use `PureComponent` only if your `props` and `state` are haven't complex data structures. If them are consists of pure or immutable data types it will works fine otherwise it will fail.
+ 
 <br />
 
 ## Treating with Forms

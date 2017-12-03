@@ -1352,7 +1352,13 @@ Student.propTypes = {
 > Build [Guess it](https://github.com/AhmedMoawad/guess-it-game) Game
 
 Here we reach the point that you can apply what we have learn above to build real application and in order to do that I create an educational and simple game called [Guess it](https://github.com/AhmedMoawad/guess-it-game) to start building react apps. Fork it's repo and start playing with it. 
+
+<p align='center'>
+  <img width="785" alt="screen shot 2017-12-03 at 10 22 53 pm" src="https://user-images.githubusercontent.com/11356226/33529365-9a48e336-d878-11e7-8c52-88210d464ad4.png">
+</p>
+
 <br />
+
 ## Final Words
 I hope that this tutorial helps to understand React better and make you able now to develop a solid web application using React. We are still improve it and will not stop improving and updating it :smile:.
 

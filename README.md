@@ -52,10 +52,13 @@ In this tutorial we will talk about how to go through <strong> React </strong> a
     - [componentWillUnmount](#componentwillunmount)
 - [Type checking with PropTypes](#type-checking-with-proptypes)
 - [Final Words](#final-words)
+- [To Be Added](#to-be-added)
 - [Author](#author)
 - [Contribution](#contribution)
 - [Support Us](#support-us)
 <br />
+
+
 
 
 ## Prerequisites
@@ -1348,6 +1351,10 @@ Student.propTypes = {
 I hope that this tutorial helps to understand React better and make you able now to develop a solid web application using React. We are still improve it and will not stop improving and updating it :smile:.
 
 <br />
+
+## To Be Added 
+- [ ] Add <strong>Guess it</strong> Game.
+- [ ] Add Tips and Tricks Part 2.
 
 ## Author
 

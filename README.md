@@ -46,7 +46,7 @@ In this tutorial we will talk about how to go through <strong> React </strong> a
     - [componentWillUpdate](#componentwillupdate)
     - [componentDidUpdate](#componentdidupdate)
     - [componentWillUnmount](#componentwillunmount)
-- [Type checking with Prop Types](#type-checking-with-prop-types)
+- [Type checking with PropTypes](#type-checking-with-proptypes)
 
 ## Prerequisites
 In order to go ahead with this tutorial, You should have good knowledge about the following
@@ -1112,7 +1112,7 @@ We can find that there is a complete language to solve this issue and other issu
 A static type checker tool called that can be integrated with many IDEs
 
 - [PropTypes](https://github.com/facebook/prop-types) 
-A npm package that was made espcially for React type checking.
+A npm package that was made espcially for React Components Props type checking.
 
 > So let's introduce `PropTypes` in the following points.
 
@@ -1121,6 +1121,38 @@ A npm package that was made espcially for React type checking.
 </p>
 
 ### Use PropTypes
+First we must install the `prop-types` npm package using the following command:
+
+```
+cd your-project
+npm install --save prop-types
+```
+
+> Here is an exmample of how to use <strong>PropTypes</strong>:
+
+```jsx
+// import PropTypes package
+import PropTypes from 'prop-types';
+
+class User extends React.Component {
+  render() {
+    return ( 
+      <div> 
+	<h1>{this.props.name}</h1>
+	<p>{this.props.age}</p>
+      </div>);
+  }
+}
+
+// Add your Props types in order to be checked during app running
+User.propTypes = {
+     name: PropTypes.string,
+     age: PropTypes.number
+}
+
+```
+
+Let's take a quick tour on `prop-types`
 
 ### Basic Types
 ### Enums

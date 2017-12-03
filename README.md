@@ -1155,7 +1155,46 @@ User.propTypes = {
 Let's take a quick tour on `prop-types`
 
 ### Basic Types
+```jsx
+
+import PropTypes from 'prop-types';
+
+class Student extends React.Component { /* ... */ }
+
+Student.propTypes = {
+     name: PropTypes.string,		     // Define prop name as String type
+     age: PropTypes.number,		     // Define prop name as Number
+     isEgyptian: PropTypes.bool,             // Define prop name as Boolean
+     scores: PropTypes.array,		     // Define prop name as Array
+     schedule: PropTypes.object,	     // Define prop name as Object
+     study: PropTypes.func,		     // Define prop name as Function
+};
+
+```
+
+> Note: Use 'object' PropType is not recommended, Use [shape](#shape) propType instead.
+
 ### Enums
+
+PropTypes Enums can be: 
+- Prop value be one of list of specific values.
+- Prop type be one of list of specific types.
+
+Here is an example of how to do that:
+
+```jsx
+import PropTypes from 'prop-types';
+class Student extends React.Component { ... }
+
+Student.propTypes = {
+     subject: PropTypes.oneOf([‘React’, ‘Angular’]),       // subject value may be React or Angular only
+     id: PropTypes.oneOfType([			           // id data type may be Number or String only
+     	PropTypes.number,
+	PropTypes.string
+     ])
+}
+```
+
 ### Collection of Specific Type
 ### Shape
 ### isRequired

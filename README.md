@@ -31,6 +31,10 @@ In this tutorial we will talk about how to go through <strong> React </strong> a
   - [Overview on React Components](#overview-on-react-components)
     - [Props](#props)
     - [State](#state)
+  - [Types of Components](#types-of-components)
+    - [Class Components](#class-components)
+    - [Functional Components](#functional-components)
+    - [Pure Components](#pure-components)
   - [Treating with Forms](#treating-with-forms)
   - [Tips and Tricks: Part 1](#tips-and-tricks)
   - [Communication between Components](#communication-between-components)
@@ -257,33 +261,33 @@ In this section we will talk about React and why using it over other like librar
 
 > If you don't need from me to prove to you that React is amazing :smile: you can just move to [Big Picture](#big-picture) section directly.
 
-#### What is React
+### What is React
 > Source of following definition is from [React official website](https://reactjs.org/tutorial/tutorial.html#what-is-react)
 
 React is a declarative, efficient, and flexible JavaScript library for building user interfaces.
 
-#### So Why React? 
+### So Why React? 
 Of course, there are many reasons to use <strong>React</strong> but I will write down some of them:
 
-##### 1. React is a component based Libray
+#### 1. React is a component based Libray
 That's mean with React you can produce reusable isolated elements called components that reduce the redundancy of your application elements, improve code quality and inspire collaboration with it's community.
 
-##### 2. React is Fast
+#### 2. React is Fast
 React uses [Virtual Dom](#virtual-dom) mechanism to improve the application rendering performance and reduce the unnecessary rendering and modification So your application will be very healthy and efficient.
 
-##### 3. React has a single source of truth
+#### 3. React has a single source of truth
 React adopt the concept of unidirectional Data Binding. So it removes the ambiguity of conflicts results from the existance of different sources of the data.
 
-##### 4. React has a full support to [Redux](https://redux.js.org)
+#### 4. React has a full support to [Redux](https://redux.js.org)
 So You can manage your application state with the awesome Redux.
 
-##### 5. React has a growing EcoSystem
+#### 5. React has a growing EcoSystem
 Facebook and React community developed React and it's ecosystem rapidly. You can find [ReactNative](https://facebook.github.io/react-native/) for mobile development, [ReactRouter](https://reacttraining.com/react-router/) for client and server rendering, [Redux](https://redux.js.org) integration for managing your Application State, [Jest](https://facebook.github.io/jest/) and [Enzyme](http://airbnb.io/enzyme)for testing your React Applications and many others.
 
-##### 6. React has awesome DevTools
+#### 6. React has awesome DevTools
 React has it's official [DevTools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en) to enhance the way you debug your React application.
 
-##### 7. React scale from small to Big applications
+#### 7. React scale from small to Big applications
 React give you the ability to produce small scale appication and can easily scale to a large web applications.
 
 > There are many other reasons to develop with React. I hope you touch them while developing with React
@@ -677,6 +681,10 @@ The result will be something like that
 	Hello, I'm Ahmed
 </p>
 
+<br />
+
+## types of Components
+<em> <strong>TODO</strong> Add the contents of this section </em>
 <br />
 
 ## Treating with Forms

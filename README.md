@@ -1180,7 +1180,7 @@ PropTypes Enums can be:
 - Prop value be one of list of specific values.
 - Prop type be one of list of specific types.
 
-Here is an example of how to do that:
+> Here is an example of how to do that:
 
 ```jsx
 import PropTypes from 'prop-types';
@@ -1196,6 +1196,64 @@ Student.propTypes = {
 ```
 
 ### Collection of Specific Type
+With PropTypes you can specify the data type of the composite typed props like `objects` or `arrays`.
+
+> For Example:
+
+```jsx
+import PropTypes from 'prop-types';
+class Student extends React.Component { ... }
+Student.propTypes = {
+     scores: PropTypes.arrayOf(PropTypes.number),
+     scoreObj: PropTypes.objectOf(PropTypes.array)
+}
+```
+
 ### Shape
+`shape` PropType is used to design your object `prop` structure. it's mostly used instead of `object` propType and also recommended to be used.
+
+> Here is an example:
+
+```jsx
+
+import PropTypes from 'prop-types';
+class Student extends React.Component { ... }
+Student.propTypes = {
+     info: PropTypes.shape({
+     	name: PropType.string.isRequired,
+	age: PropType.number,
+	courses: PropType.arrayOf(Proptype.string)
+     })
+}
+```
+
+So `info` prop will be an object that have `name` string property and it is required, `age` number property and `courses` array property. So we define the object more accurately. 
+
+### instanceOf
+We can check if the prop is instance of any prototype or custom object using `instanceOf` method.
+
+```jsx
+import PropTypes from 'prop-types';
+class Student extends React.Component { ... }
+Student.propTypes = {
+     schedule: PropTypes.instanceOf(Schedule)		// Check if the value is instance of Schedule Object
+}
+```
+
+> Note: You can use it instead of `object` propType and make custom models (objects) with a specific structure to check if the prop value is <strong>instance of</strong> it or not.
+
 ### isRequired
-### isInstance
+We can specify if the `prop` is required or optional.
+
+```jsx
+import PropTypes from 'prop-types';
+class Student extends React.Component { ... }
+Student.propTypes = {
+     name: PropTypes.string.isRequired,		 // will raise error if name is not provided
+     bio: PropTypes.string,			 // will check only if the bio value provided
+}		
+```
+
+> Note: Instead of make the `prop` required, you can assign to it a default value if it's not provided. See [defaultProps]('#defaultprops') section.
+
+

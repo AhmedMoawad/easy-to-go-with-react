@@ -1101,8 +1101,27 @@ is invoked immediately before a component is unmounted and destroyed
 
 <br />
 
-## Type checking with Prop Types
+## Type checking with PropTypes
+
+We all know that JavaScript is Dynamic Data Typed Language so there is no restrictions on variables types. This feature gives us the felixibility in many cases but in other cases in order to improve your code quality and to ensure that everything works fine we need to check the types of variables. From this prespective, The Type checking concept appears in many ways:
+
+- [TypeScript](https://www.typescriptlang.org/) 
+We can find that there is a complete language to solve this issue and other issues
+
+- [Flow](https://flow.org/)
+A static type checker tool called that can be integrated with many IDEs
+
+- [PropTypes](https://github.com/facebook/prop-types) 
+A npm package that was made espcially for React type checking.
+
+> So let's introduce `PropTypes` in the following points.
+
+<p align='center'>
+	<img src='https://user-images.githubusercontent.com/11356226/33525383-0baad080-d837-11e7-9de4-00656388096c.gif'>
+</p>
+
 ### Use PropTypes
+
 ### Basic Types
 ### Enums
 ### Collection of Specific Type

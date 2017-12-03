@@ -51,6 +51,7 @@ In this tutorial we will talk about how to go through <strong> React </strong> a
     - [componentDidUpdate](#componentdidupdate)
     - [componentWillUnmount](#componentwillunmount)
 - [Type checking with PropTypes](#type-checking-with-proptypes)
+- [Practice React](#practice-react)
 - [Final Words](#final-words)
 - [To Be Added](#to-be-added)
 - [Author](#author)
@@ -1347,13 +1348,18 @@ Student.propTypes = {
 
 <br />
 
+## Practice React
+> Build [Guess it](https://github.com/AhmedMoawad/guess-it-game) Game
+
+Here we reach the point that you can apply what we have learn above to build real application and in order to do that I create an educational and simple game called [Guess it](https://github.com/AhmedMoawad/guess-it-game) to start building react apps. Fork it's repo and start playing with it. 
+<br />
 ## Final Words
 I hope that this tutorial helps to understand React better and make you able now to develop a solid web application using React. We are still improve it and will not stop improving and updating it :smile:.
 
 <br />
 
 ## To Be Added 
-- [ ] Add <strong>Guess it</strong> Game.
+- [x] Add <strong>Guess it</strong> Game.
 - [ ] Add Tips and Tricks Part 2.
 
 ## Author

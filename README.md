@@ -10,7 +10,6 @@ In this tutorial we will talk about how to go through <strong> React </strong> a
 ## Table of Contents
 
   - [Prerequisites](#prerequisites)
-  - [Setup](#setup)
   - [Tutorial Map](#tutorial-map)
   - [Quick Look at ES6](#quick-look-at-es6)
     - [let](#let)
@@ -20,6 +19,7 @@ In this tutorial we will talk about how to go through <strong> React </strong> a
     - [String Interpolation](#string-interpolation)
     - [Modules](#modules)
   - [React Overview](#react-overview)
+  - [Setup](#setup)
   - [Big Picture](#big-picture)
   - [Virtual DOM](#virtual-dom)
   - [JSX](#jsx)
@@ -64,37 +64,12 @@ In this tutorial we will talk about how to go through <strong> React </strong> a
 <br />
 
 
-
-
 ## Prerequisites
 In order to go ahead with this tutorial, You should have good knowledge about the following
 
 - [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
 - [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
 - [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-<br />
-
-## Setup
-
-We will use in this tutorial the simple and easy method to create react app called `create-react-app` package
-1. Install `create-react-app` NPM package globally
-```
- npm i -g create-react-app
-```   
-2. Create your app
-```
- create-react-app your-project-name
- 
- cd your-project-name
- 
- yarn install
-```
-3. Start your app
-```
- yarn start
-```
-
-You can visit [Create React App](https://github.com/facebookincubator/create-react-app) for more info.
 <br />
 
 ## Tutorial Map
@@ -305,6 +280,29 @@ React has it's official [DevTools](https://chrome.google.com/webstore/detail/rea
 React give you the ability to produce small scale appication and can easily scale to a large web applications.
 
 > There are many other reasons to develop with React. I hope you touch them while developing with React
+<br />
+
+## Setup
+
+We will use in this tutorial the simple and easy method to create react app called `create-react-app` package
+1. Install `create-react-app` NPM package globally
+```
+ npm i -g create-react-app
+```   
+2. Create your app
+```
+ create-react-app your-project-name
+ 
+ cd your-project-name
+ 
+ yarn install
+```
+3. Start your app
+```
+ yarn start
+```
+
+You can visit [Create React App](https://github.com/facebookincubator/create-react-app) for more info.
 <br />
 
 ## Big Picture

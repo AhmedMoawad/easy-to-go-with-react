@@ -1,3 +1,7 @@
+<p align='center'>
+	<img src='https://user-images.githubusercontent.com/32731288/33607384-9b4ae462-d9c9-11e7-9191-34be4ffa74ac.png'>
+</p>
+
 # Easy to go with React
 In this tutorial we will talk about how to go through <strong> React </strong> and prepare you to be able to build web apps using the amazing <strong> React </strong> like you play with <em> lego bricks </em> :smile:.
 

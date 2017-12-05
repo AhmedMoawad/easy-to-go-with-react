@@ -1,4 +1,4 @@
-# React - The Lego Game
+# Easy to go with React
 In this tutorial we will talk about how to go through <strong> React </strong> and prepare you to be able to build web apps using the amazing <strong> React </strong> like you play with <em> lego bricks </em> :smile:.
 
 <br />

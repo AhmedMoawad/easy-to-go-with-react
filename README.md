@@ -1,5 +1,5 @@
 <p align='center'>
-	<img src='https://user-images.githubusercontent.com/32731288/33607384-9b4ae462-d9c9-11e7-9191-34be4ffa74ac.png'>
+	<img src='https://user-images.githubusercontent.com/32731288/33612007-f1802e28-d9d8-11e7-9e9f-f84ce20e8866.png'>
 </p>
 
 # Easy to go with React
